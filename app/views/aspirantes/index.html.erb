@@ -1,0 +1,26 @@
+<h1>DAC Gs Aspirantes</h1>
+
+<div class= "Tabla_aspirantes">
+	<div class="Title"></div>
+		<div class= "Headding">
+			<div class= "Head_cell">Id</div>
+			<div class= "Head_cell">Nombre</div>
+			<div class= "Head_cell">Snombre</div>
+			<div class= "Head_cell">Apellido</div>
+			<div class= "Head_cell">DNI</div>
+			<div class= "Head_cell">Fech_Nac</div>
+		</div>
+		<%= @aspirantes.each do |aspirante| %>
+			<div class="Row">
+				<div class="aspirante_dato_tabla"><%= aspirante.idaspirantes %></div>
+				<div class="aspirante_dato_tabla"><%= aspirante.nombre %></div>
+				<div class="aspirante_dato_tabla"><%= aspirante.segundo_nombre %></div>
+				<div class="aspirante_dato_tabla"><%= aspirante.apellido %></div>
+				<div class="aspirante_dato_tabla"><%= aspirante.dni %></div>
+				<div class="aspirante_dato_tabla"><%= aspirante.fecha_de_nacimiento	 %></div>
+				
+			</div>
+		<% end %>
+</div>
+
+<!--  -->
